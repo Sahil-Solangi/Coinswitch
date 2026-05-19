@@ -1,0 +1,73 @@
+/* ── Top-right icon buttons (Language + Support) ── */
+.top-right {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  display: flex;
+  gap: 10px;
+  z-index: 20;
+}
+
+.icon-btn {
+  width: 38px;
+  height: 38px;
+  border: 1.5px solid rgba(0, 210, 195, 0.4);
+  border-radius: 8px;
+  background: rgba(0, 210, 195, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.2s;
+  text-decoration: none;
+  color: inherit;
+}
+
+.icon-btn:hover {
+  background: rgba(0, 210, 195, 0.14);
+}
+
+.icon-btn svg {
+  width: 18px;
+  height: 18px;
+  stroke: #00d4c2;
+  fill: none;
+  stroke-width: 1.7;
+}
+
+.icon-btn .badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 1.5px solid #060d18;
+}
+
+.badge-green {
+  background: #22c55e;
+}
+
+.badge-teal {
+  background: #06b6d4;
+}
+
+@media (max-width: 480px) {
+  .top-right {
+    top: 14px;
+    right: 14px;
+    gap: 8px;
+  }
+
+  .icon-btn {
+    width: 34px;
+    height: 34px;
+  }
+
+  .icon-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+}
