@@ -91,7 +91,7 @@ export default function Support() {
             <h1>24/7 Online Support</h1>
             <p>
               <span className="live-dot" aria-hidden="true" />
-              We are online — talk to us
+              Online
             </p>
           </div>
         </header>
